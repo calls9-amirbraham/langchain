@@ -397,7 +397,7 @@ class ChatMistralAI(BaseChatModel):
             "max_tokens": self.max_tokens,
             "top_p": self.top_p,
             "random_seed": self.random_seed,
-            "safe_prompt": self.safe_mode,
+            #"safe_prompt": self.safe_mode,
         }
         filtered = {k: v for k, v in defaults.items() if v is not None}
         return filtered
